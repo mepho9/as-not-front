@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="flex-center">
+    <ion-card>
+
+      <ion-card-header>
+        <ion-card-title color="success">Asnot</ion-card-title>
+      </ion-card-header>
+
+      <form (submit)="login()">
+        <ion-card-content>
+          <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input type="text" name="username" [(ngModel)]="username"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="Password" name="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+          <ion-button color="dark" fill="clear" size="full">Forgot email/Password</ion-button>
+          <ion-button color="success" size="full" type="submit">Login</ion-button>
+          <ion-button color="success" size="full" fill="clear">Register</ion-button>
+        </ion-card-content>
+      </form>
+
+    </ion-card>
+  </div>
+</ion-content>

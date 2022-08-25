@@ -1,3 +1,5 @@
+
+
 <ion-header>
   <ion-toolbar color="success">
     <ion-title>Register</ion-title>
@@ -6,6 +8,8 @@
 
 <ion-content>
 
+  <form [formGroup]="registerForm" (submit)="register()">
+
   <ion-card>
 
     <ion-card-header>
@@ -13,7 +17,7 @@
     </ion-card-header>
     <ion-card-content>
 
-      <ion-radio-group>
+      <ion-radio-group formControlName="sexe" id="sexe">
     
         <ion-item>
           <ion-label>Male</ion-label>
@@ -36,27 +40,33 @@
     </ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-label position="floating"> Nickname</ion-label>
-        <ion-input type="texte"></ion-input>
+        <ion-label position="floating"  name="username" > Username </ion-label>
+        <ion-input type="texte" formControlName="username"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="floating"> Email</ion-label>
-        <ion-input type="Email"></ion-input>
+        <ion-label position="floating" > Email</ion-label>
+        <ion-input type="Email" formControlName="email"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="floating"> Password</ion-label>
-        <ion-input type="Password"></ion-input>
+        <ion-label position="floating" > Password</ion-label>
+        <ion-input type="Password" formControlName="password"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="floating"> Confirm password</ion-label>
-        <ion-input type="Password"></ion-input>
+        <ion-label position="floating" > Confirm password</ion-label>
+        <ion-input type="Password" formControlName="confirmPassword"></ion-input>
       </ion-item>
 
     </ion-card-content>
   </ion-card>
-  <ion-button size="full" color="light">Register</ion-button>
+
+  <ion-button size="full" color="light" type="submit">Register</ion-button>
+
+</form>
 
 </ion-content>
+
+
+
