@@ -18,7 +18,7 @@ export class RegisterPage implements OnInit {
 
     email: new FormControl("", [Validators.required, Validators.min(3)]),
 
-    password: new FormControl("", [Validators.required, Validators.min(4)]),
+    password: new  FormControl("", [Validators.required, Validators.min(4)]),
     confirmPassword: new FormControl("", [Validators.required, Validators.min(4)])
 
   });
@@ -38,7 +38,7 @@ export class RegisterPage implements OnInit {
           this.token = token["token"];
           localStorage.setItem("token", this.token);
           this._session.login(this.token);
-          this._router.navigate(["/"]);
+          this._router.navigate(["/home"]);
         });
       });
     }

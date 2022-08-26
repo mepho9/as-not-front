@@ -26,9 +26,12 @@ export class LoginPage implements OnInit {
         this.token = token["token"];
         localStorage.setItem("token",this.token);
         this._session.login(this.token);
-        this._router.navigate(["/loader"]);
+        this._router.navigate(["/home"]);
       })
+  }
 
+  register() {
+    this._router.navigate(['register'])
   }
 
 }
