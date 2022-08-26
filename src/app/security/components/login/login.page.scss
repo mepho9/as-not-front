@@ -2,6 +2,10 @@ ion-button[color="dark"]{
     text-transform: initial;
 }
 
+// ion-content{
+//     --background: var(--ion-color-success);
+// }
+
 ion-content{
-    --background: var(--ion-color-success);
+    --background: url("/../../assets/homeBg.jpg")
 }
