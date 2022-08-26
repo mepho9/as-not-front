@@ -1,12 +1,13 @@
 
+  <ion-header transclude>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-header>
 
-<ion-header>
-  <ion-toolbar color="success">
-    <ion-title>Register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
+<ion-content >
 
   <form [formGroup]="registerForm" (submit)="register()">
 
@@ -62,7 +63,8 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-button size="full" color="light" type="submit">Register</ion-button>
+  <ion-button size="full" color="light" type="submit">Create account</ion-button>
+  <ion-button color="light" size="full" [routerLink]="['/login']">Back to login</ion-button>
 
 </form>
 

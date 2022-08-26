@@ -18,7 +18,9 @@
           </ion-item>
           <ion-button color="dark" fill="clear" size="full">Forgot email/Password</ion-button>
           <ion-button color="success" size="full" type="submit">Login</ion-button>
-          <ion-button color="success" size="full" fill="clear" (click)="register()">Register</ion-button>
+          <!-- <ion-button color="success" size="full" fill="clear" (click)="register()">Register</ion-button> -->
+          <ion-button color="success" fill="clear" size="full" [routerLink]="['/register']">Register</ion-button>
+
         </ion-card-content>
       </form>
 
