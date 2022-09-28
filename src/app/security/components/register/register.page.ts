@@ -47,9 +47,6 @@ export class RegisterPage implements OnInit {
       // })
       // $obs.subscribe(() =>  {/* ... */})
 
-
-      console.log( this.registerForm )
-
       this._auth.register(
         <string>this.registerForm.get("username")?.value,
         <string>this.registerForm.get("password")?.value, 
