@@ -37,17 +37,12 @@
   <ion-card>
 
     <ion-card-header>
-      <ion-card-title> Contact  </ion-card-title>
+      <ion-card-title> Login  </ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-item>
         <ion-label position="floating"  name="username" > Username </ion-label>
         <ion-input type="texte" formControlName="username"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating" > Email</ion-label>
-        <ion-input type="Email" formControlName="email"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -59,7 +54,32 @@
         <ion-label position="floating" > Confirm password</ion-label>
         <ion-input type="Password" formControlName="confirmPassword"></ion-input>
       </ion-item>
+      
+    </ion-card-content>
+  </ion-card>
 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Contact  </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating"  name="pseudo" > Pseudo </ion-label>
+        <ion-input type="texte" formControlName="pseudo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="date" formControlName="birthDate"></ion-input>
+      </ion-item>
+
+      <ion-list>
+        <ion-item>
+          <ion-select interface="popover" placeholder="Country" formControlName="country">
+            <ion-select-option value="belgium">Belgium</ion-select-option>
+            <ion-select-option value="france">France</ion-select-option>
+            <ion-select-option value="china">China</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 
