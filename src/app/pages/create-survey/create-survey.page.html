@@ -13,4 +13,59 @@
 
 <ion-content>
 
+  <form [formGroup] ="createSurveyForm" (ngSubmit)="createSurvey()">
+  
+    <ion-card>
+      <!-- <ion-card-header>
+        <ion-card-title> </ion-card-title>
+      </ion-card-header> -->
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label position="floating" name="title"> 
+
+            <ion-text color="dark">
+              <h1>Title</h1>  
+            </ion-text>
+
+          </ion-label>
+          <ion-input type="texte" formControlName="title"></ion-input>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating" name="publicationText"> 
+
+            <ion-text color="dark">
+              <h2>Problematic</h2>  
+            </ion-text>          
+          </ion-label>
+
+            <ion-textarea rows ="6" cols="20" formControlName="publicationText"></ion-textarea>
+        </ion-item>
+
+
+
+      </ion-card-content>
+
+
+      
+    </ion-card>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    <ion-button size="full" color="light" type="submit"> Submit Survey</ion-button>
+  </form>
+  
 </ion-content>
