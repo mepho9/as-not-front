@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'create-survey',
+    loadChildren: () => import('./pages/create-survey/create-survey.module').then( m => m.CreateSurveyPageModule)
+  },
+  {
+    path: 'search-survey',
+    loadChildren: () => import('./pages/search-survey/search-survey.module').then( m => m.SearchSurveyPageModule)
   }
 ];
 
